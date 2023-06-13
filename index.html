@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KLAMZ - Headache and Migraine Relief</title>
+  <title>Head ice cap - Headache and Migraine Relief</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/transition-style">
+
   <style>
     body {
 
@@ -62,12 +64,39 @@ footer {
   color: #FFFFFF;
   padding: 1rem;
 }
+
+.price-container {
+  text-align: center;
+}
+
+.original-price {
+  font-size: 16px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.discount {
+  display: inline-block;
+  background-color: #e74c3c;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin: 0 5px;
+}
+
+.current-price {
+  font-size: 24px;
+  color: #12c415;
+  font-weight: bold;
+}
+
   </style>
 </head>
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">KLAMZ</a>
+      <a class="navbar-brand" href="#">Head ice cap</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -85,39 +114,50 @@ footer {
   </header>
   <section id="hero" class="py-5 text-center">
     <div class="container">
-      <h1 class="display-4">Introducing KLAMZ: The Solution for Natural Headache and Migraine Relief!</h1>
-      <p class="lead">Tired of dealing with debilitating headaches and migraines? Look no further! KLAMZ is the revolutionary product that will change your life. Our head wrap uses a combination of cold therapy and gentle compression to provide you with instant and lasting relief.</p>
+      
+      <h1 class="display-4">Introducing Head ice cap: The Solution for Natural Headache and Migraine Relief!</h1>
+      <p class="lead">Tired of dealing with debilitating headaches and migraines? Look no further! Head ice cap is the revolutionary product that will change your life. Our head wrap uses a combination of cold therapy and gentle compression to provide you with instant and lasting relief.</p>
     </div>
   </section>
   <section id="features" class="py-5">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h2>Key Features of KLAMZ:</h2>
+          <h2>Key Features of Head ice cap:</h2>
           <ul>
             <li>Natural Relief: Say goodbye to painkillers and invasive treatments.</li>
-            <li>Ergonomic Design: Our KLAMZ head wrap is designed with your comfort in mind.</li>
-            <li>Easy to Use: KLAMZ is extremely user-friendly.</li>
-            <li>Versatility: KLAMZ can also aid in the treatment of other conditions like fever, muscle tension, and stress.</li>
-            <li>Portable and Durable: KLAMZ is compact and easy to carry, built with high-quality materials to ensure long-term durability.</li>
+            <li>Ergonomic Design: Our Head ice cap head wrap is designed with your comfort in mind.</li>
+            <li>Easy to Use: Head ice cap is extremely user-friendly.</li>
+            <li>Versatility: Head ice cap can also aid in the treatment of other conditions like fever, muscle tension, and stress.</li>
+            <li>Portable and Durable: Head ice cap is compact and easy to carry, built with high-quality materials to ensure long-term durability.</li>
           </ul>
         </div>
-        <div class="col-md-6">
-          <img src="klam.png" alt="KLAMZ" class="img-fluid">
+        <div class="col-md-2" transition-style="in:wipe:up">
+          <img src="klam.png" alt="Head ice cap" class="img-fluid">
+        </div>
+        <div class="price-container">
+          
+          <span class="discount">-35% </span>
+          <span class="current-price">$12.99 (US $12.99) / count)</span>
+          <span class="original-price">previous price US $19.99</span>
         </div>
       </div>
     </div>
   </section>
   <section id="order" class="py-5 text-center">
     <div class="container">
-      <h2>Order Your KLAMZ Today and Experience the Instant Relief You Deserve!</h2>
-      <p>Click the link below to buy your KLAMZ now:</p>
-      <a href="https://www.amazon.com/Klamz-Head-Wrap-Migraine-Relief/dp/B0BT15D37Y/ref=sr_1_1?keywords=KLAMZ&qid=1686094614&sr=8-1" class="btn btn-primary">Buy on Amazon</a>
+      <div class="col-md-2" transition-style="in:wipe:up">
+        <img src="la.png" alt="Head ice cap" class="img-fluid">
+      </div>
+      <h2>Order Your Head ice cap Today and Experience the Instant Relief You Deserve!</h2>
+      <p>Click the link below to buy your Head ice cap now:</p>
+      <a href="https://www.amazon.com/Head ice cap-Head-Wrap-Migraine-Relief/dp/B0BT15D37Y/ref=sr_1_1?keywords=Head ice cap&qid=1686094614&sr=8-1" class="btn btn-primary">Buy on Amazon</a>
     </div>
+    
   </section>
   <footer class="py-3 text-center">
     <div class="container">
-      <p>© 2023 DesarrolloExperto. All rights reserved.</p>
+      <p></p>
     </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
