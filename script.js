@@ -1,10 +1,10 @@
 // Verifica si ya existe un tiempo inicial almacenado
-var initialTime = sessionStorage.getItem("initialTime");
+var initialTime = localStorage.getItem("initialTime");
 
 // Si no hay tiempo inicial almacenado, establece uno nuevo
 if (!initialTime) {
   initialTime = new Date().getTime();
-  sessionStorage.setItem("initialTime", initialTime);
+  localStorage.setItem("initialTime", initialTime);
 }
 
 // Establece la duración de la oferta en 6 horas (en milisegundos)
