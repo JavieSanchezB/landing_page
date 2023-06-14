@@ -90,6 +90,19 @@ footer {
   color: #12c415;
   font-weight: bold;
 }
+#timer {
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+
+}
+#timer span {
+  color: hsl(133, 73%, 37%);
+}
+
+#timer span::before {
+  content: ":";
+}
 
   </style>
 </head>
@@ -118,7 +131,12 @@ footer {
       <h1 class="display-4">Introducing Head ice cap: The Solution for Natural Headache and Migraine Relief!</h1>
       <p class="lead">Tired of dealing with debilitating headaches and migraines? Look no further! Head ice cap is the revolutionary product that will change your life. Our head wrap uses a combination of cold therapy and gentle compression to provide you with instant and lasting relief.</p>
     </div>
+    <h2>take advantage of promotion only for these hours</h2>
   </section>
+ 
+  <div id="timer">6:00:00</div>
+
+  <script src="script.js"></script>
   <section id="features" class="py-5">
     <div class="container">
       <div class="row">
@@ -132,7 +150,7 @@ footer {
             <li>Portable and Durable: Head ice cap is compact and easy to carry, built with high-quality materials to ensure long-term durability.</li>
           </ul>
         </div>
-        <div class="col-md-2" transition-style="in:wipe:up">
+        <div class="col-md-6" transition-style="in:wipe:up">
           <img src="klam.png" alt="Head ice cap" class="img-fluid">
         </div>
         <div class="price-container">
