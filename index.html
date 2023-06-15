@@ -104,6 +104,56 @@ footer {
   content: ":";
 }
 
+
+
+
+
+
+.slider {
+  position: relative;
+  width: 100%;
+}
+
+.slider-images {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-images img {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+.thumbnail-slider {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.thumbnail-images {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.thumbnail-images img {
+  width: 80px;
+  height: 60px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.thumbnail-images img.active {
+  border-color: blue;
+}
+
+
+
+
+
+
   </style>
 </head>
 <body>
@@ -133,6 +183,26 @@ footer {
     </div>
     <h2>take advantage of promotion only for these hours</h2>
   </section>
+<section id="hero" class="py-5 text-center"></section>
+  <div class="slider">
+  <div class="slider-images">
+    <img src="imagen1.jpg" alt="Imagen 1">
+    <img src="imagen2.jpg" alt="Imagen 2">
+    <img src="imagen3.jpg" alt="Imagen 3">
+    <img src="imagen4.jpg" alt="Imagen 4">
+    <img src="imagen5.jpg" alt="Imagen 5">
+  </div>
+  <div class="thumbnail-slider">
+    <div class="thumbnail-images">
+      <img src="imagen1.jpg" alt="Imagen 1">
+      <img src="imagen2.jpg" alt="Imagen 2">
+      <img src="imagen3.jpg" alt="Imagen 3">
+      <img src="imagen4.jpg" alt="Imagen 4">
+      <img src="imagen5.jpg" alt="Imagen 5">
+    </div>
+  </div>
+</div>
+ </section>
  
   <div id="timer">
     <span id="hours">06</span>
@@ -182,6 +252,8 @@ footer {
       <p></p>
     </div>
   </footer>
+ 
+  <script src="slider.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>

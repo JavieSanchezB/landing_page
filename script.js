@@ -42,3 +42,5 @@ var x = setInterval(function() {
     document.getElementById("timer").innerHTML = "Oferta expirada";
   }
 }, 1000);
+
+
