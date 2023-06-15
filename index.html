@@ -186,6 +186,45 @@ footer {
 }
 
 
+
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 800px;
+  max-height: 80%;
+  overflow: auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.modal video {
+  width: 100%;
+  height: 100%;
+}
+
+
+
   </style>
 </head>
 <body>
@@ -207,6 +246,18 @@ footer {
       </div>
     </nav>
   </header>
+
+  <div id="modal-video" class="modal">
+    <div class="modal-content">
+      <div class="modal-close">&times;</div>
+      <video id="video-player" autoplay controls>
+        <source src="video1.webm" type="video/mp4">
+      </video>
+    </div>
+  </div>
+  
+
+
   <section id="hero" class="py-5 text-center">
     <div class="container">
       
@@ -297,6 +348,7 @@ footer {
   </footer>
  
   <script src="slider.js"></script>
+  <script src="video.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
