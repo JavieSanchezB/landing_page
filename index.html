@@ -153,6 +153,38 @@ footer {
 
 
 
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #E68300;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+.small-image {
+  width: 100%;
+  height: auto;
+  max-width: 100px;
+  max-height: 100px;
+  
+}
+
 
   </style>
 </head>
@@ -181,7 +213,7 @@ footer {
       <h1 class="display-4">Introducing Head ice cap: The Solution for Natural Headache and Migraine Relief!</h1>
       <p class="lead">Tired of dealing with debilitating headaches and migraines? Look no further! Head ice cap is the revolutionary product that will change your life. Our head wrap uses a combination of cold therapy and gentle compression to provide you with instant and lasting relief.</p>
     </div>
-    <h2>take advantage of promotion only for these hours</h2>
+    
   </section>
 <section id="hero" class="py-5 text-center"></section>
   <div class="slider">
@@ -202,9 +234,12 @@ footer {
     </div>
   </div>
 </div>
+
  </section>
+
+<center> <h2>take advantage of promotion only for these hours</h2></center>
  
-  <div id="timer">
+ <div id="timer">
     <span id="hours">06</span>
     <span id="minutes">00</span>
     <span id="seconds">00</span>
@@ -238,13 +273,21 @@ footer {
   </section>
   <section id="order" class="py-5 text-center">
     <div class="container">
-      <div class="col-md-2" transition-style="in:wipe:up">
-        <img src="la.png" alt="Head ice cap" class="img-fluid">
-      </div>
+    
       <h2>Order Your Head ice cap Today and Experience the Instant Relief You Deserve!</h2>
-      <p>Click the link below to buy your Head ice cap now:</p>
-      <a href="https://www.amazon.com/Head ice cap-Head-Wrap-Migraine-Relief/dp/B0BT15D37Y/ref=sr_1_1?keywords=Head ice cap&qid=1686094614&sr=8-1" class="btn btn-primary">Buy on Amazon</a>
+    
     </div>
+   
+    <div class="floating-button">
+     
+      <p>Click the link below to buy your Head ice cap now:</p>
+      <div class="col-md-8">
+        <img src="la.png" alt="Head ice cap" class="small-image">
+      </div>
+      <a href="https://www.amazon.com/Head ice cap-Head-Wrap-Migraine-Relief/dp/B0BT15D37Y/ref=sr_1_1?keywords=Head ice cap&qid=1686094614&sr=8-1" class="btn btn-warning">Buy on Amazon</a>
+    </div>
+    
+  
     
   </section>
   <footer class="py-3 text-center">
